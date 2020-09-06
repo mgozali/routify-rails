@@ -12,3 +12,11 @@ echo "<h1>About</h1>" > app/javascript/pages/about.svelte
 yarn routify -p app/javascript/pages -b
 rails server
 ```
+
+# Add Overmind
+
+Reference: https://github.com/DarthSim/overmind
+
+```
+overmind start
+```
