@@ -1,24 +1,14 @@
-# README
+# Svelte Routify
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rails new routify-rails -B -T --webpacker=svelte --skip-turbolinks
+rake db:create
+rails g controller static index
+yarn add -D @sveltech/routify
 
-Things you may want to cover:
+mkdir app/javascript/pages
+echo "<h1>About</h1>" > app/javascript/pages/about.svelte
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+yarn routify -p app/javascript/pages -b
+rails server
+```
